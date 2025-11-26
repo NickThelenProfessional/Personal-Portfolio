@@ -5,35 +5,61 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nick Thelen · Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container nav">
-            <a class="brand" href="index.html">Nick Thelen</a>
-            <nav class="top-nav">
-                <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </div>
-    </header>
-    <main class="container">
-        <!-- Page-specific content goes here -->
-        <section class="intro">
-            <img src="assets/img/ProfilePicture.jpg" alt="Nick Thelen" class="profile-pic">
-            <div class="intro-text">
-                <h1>Welcome</h1>
-                <p>This site showcases course and personal projects.</p>
-            </div>
-        </section>
-    </main>
-    <footer class="site-footer">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
         <div class="container">
-            <small>© 2025 Nick Thelen. All rights reserved.</small>
+            <a class="navbar-brand fw-bold text-primary" href="index.html">Nick Thelen</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <!-- HERO -->
+    <main class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="assets/img/ProfilePicture.jpg"
+                     class="rounded-circle shadow hero-img"
+                     alt="Nick" width="200" height="200">
+            </div>
+
+            <div class="col-md-8">
+                <h1 class="fw-bold">Hello, I'm Nick</h1>
+                <p class="lead text-secondary">
+                    Cybersecurity student exploring AI, networks, and secure software development.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-light text-center py-3 border-top">
+        <small class="text-secondary">© 2025 Nick Thelen. All rights reserved.</small>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
